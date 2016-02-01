@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', ['middleware' => ['unauth'], function() {
+  return view('welcome');
+}]);
 
 /*
 |--------------------------------------------------------------------------

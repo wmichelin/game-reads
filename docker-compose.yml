@@ -6,7 +6,7 @@ db:
      - MYSQL_ROOT_PASSWORD=verysecret
      - MYSQL_DATABASE=game_reads
 web:
-  build: .
+  build: .  
   command: php artisan serve --host=0.0.0.0 --port=8000
   volumes:
     - .:/app
