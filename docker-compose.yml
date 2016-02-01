@@ -4,6 +4,7 @@ db:
     - "3306"
   environment:
      - MYSQL_ROOT_PASSWORD=verysecret
+     - MYSQL_DATABASE=game_reads
 web:
   build: .
   command: php artisan serve --host=0.0.0.0 --port=8000
